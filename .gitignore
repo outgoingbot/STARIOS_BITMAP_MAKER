@@ -1,0 +1,4 @@
+#Ignore List
+/.vs
+/STARIOS_BITMAP_MAKER/obj
+/STARIOS_BITMAP_MAKER/bin
