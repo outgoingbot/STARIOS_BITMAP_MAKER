@@ -54,7 +54,7 @@ Public Class Form1
         result = "0x" + result
         output = Split(result, ",")
         'just gonna brute force this as I dont feel like abstracting this right now. 
-        txtboxOut.Text = "const char " + TextBox3.Text + "[16] = { " + Environment.NewLine + output(14) + "," + output(12) + "," + output(10) + "," + output(8) + "," + output(6) + "," + output(4) + "," + output(2) + "," + output(0) + "," + Environment.NewLine + output(15) + "," + output(13) + "," + output(11) + "," + output(9) + "," + output(7) + "," + output(5) + "," + output(3) + "," + output(1) + "};"
+        txtboxOut.Text = "PROGMEM const uint8_t " + TextBox3.Text + "[16] = { " + Environment.NewLine + output(14) + "," + output(12) + "," + output(10) + "," + output(8) + "," + output(6) + "," + output(4) + "," + output(2) + "," + output(0) + "," + Environment.NewLine + output(15) + "," + output(13) + "," + output(11) + "," + output(9) + "," + output(7) + "," + output(5) + "," + output(3) + "," + output(1) + "};"
         myImage.Dispose()
 
     End Sub
